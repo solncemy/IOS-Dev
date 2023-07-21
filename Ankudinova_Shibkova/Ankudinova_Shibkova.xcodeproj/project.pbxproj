@@ -11,6 +11,10 @@
 		874AA83F2A6993C1003A7EA1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874AA83E2A6993C1003A7EA1 /* NetworkManager.swift */; };
 		874AA8422A69950F003A7EA1 /* CharactersResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874AA8412A69950F003A7EA1 /* CharactersResponseModel.swift */; };
 		874AA8452A69A03D003A7EA1 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874AA8442A69A03D003A7EA1 /* UIImageView+Extensions.swift */; };
+		874AA8482A6A77A4003A7EA1 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 874AA8462A6A77A4003A7EA1 /* Model.xcdatamodeld */; };
+		874AA84A2A6A799E003A7EA1 /* PersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874AA8492A6A799E003A7EA1 /* PersistentContainer.swift */; };
+		874AA8592A6A84BC003A7EA1 /* Character+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874AA8572A6A84BC003A7EA1 /* Character+CoreDataClass.swift */; };
+		874AA85A2A6A84BC003A7EA1 /* Character+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874AA8582A6A84BC003A7EA1 /* Character+CoreDataProperties.swift */; };
 		927DADC42A4F446200A469A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927DADC32A4F446200A469A3 /* AppDelegate.swift */; };
 		927DADC62A4F446200A469A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927DADC52A4F446200A469A3 /* SceneDelegate.swift */; };
 		927DADC82A4F446200A469A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927DADC72A4F446200A469A3 /* ViewController.swift */; };
@@ -29,6 +33,10 @@
 		874AA83E2A6993C1003A7EA1 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		874AA8412A69950F003A7EA1 /* CharactersResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersResponseModel.swift; sourceTree = "<group>"; };
 		874AA8442A69A03D003A7EA1 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		874AA8472A6A77A4003A7EA1 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		874AA8492A6A799E003A7EA1 /* PersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentContainer.swift; sourceTree = "<group>"; };
+		874AA8572A6A84BC003A7EA1 /* Character+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Character+CoreDataClass.swift"; sourceTree = "<group>"; };
+		874AA8582A6A84BC003A7EA1 /* Character+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Character+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		927DADC02A4F446200A469A3 /* Ankudinova_Shibkova.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ankudinova_Shibkova.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		927DADC32A4F446200A469A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		927DADC52A4F446200A469A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +107,8 @@
 		927DADB72A4F446200A469A3 = {
 			isa = PBXGroup;
 			children = (
+				874AA8572A6A84BC003A7EA1 /* Character+CoreDataClass.swift */,
+				874AA8582A6A84BC003A7EA1 /* Character+CoreDataProperties.swift */,
 				927DADC22A4F446200A469A3 /* Ankudinova_Shibkova */,
 				927DADC12A4F446200A469A3 /* Products */,
 				5AF2325E542EDA053FFEA662 /* Pods */,
@@ -129,6 +139,8 @@
 				927DADD12A4F446400A469A3 /* Info.plist */,
 				927DADE12A50615A00A469A3 /* CharacterTableViewCell.swift */,
 				927DADE32A50893000A469A3 /* ModalViewController.swift */,
+				874AA8462A6A77A4003A7EA1 /* Model.xcdatamodeld */,
+				874AA8492A6A799E003A7EA1 /* PersistentContainer.swift */,
 			);
 			path = Ankudinova_Shibkova;
 			sourceTree = "<group>";
@@ -249,12 +261,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				874AA8452A69A03D003A7EA1 /* UIImageView+Extensions.swift in Sources */,
+				874AA8592A6A84BC003A7EA1 /* Character+CoreDataClass.swift in Sources */,
 				927DADC82A4F446200A469A3 /* ViewController.swift in Sources */,
 				927DADE42A50893000A469A3 /* ModalViewController.swift in Sources */,
+				874AA84A2A6A799E003A7EA1 /* PersistentContainer.swift in Sources */,
 				927DADC42A4F446200A469A3 /* AppDelegate.swift in Sources */,
 				927DADC62A4F446200A469A3 /* SceneDelegate.swift in Sources */,
 				874AA83F2A6993C1003A7EA1 /* NetworkManager.swift in Sources */,
+				874AA85A2A6A84BC003A7EA1 /* Character+CoreDataProperties.swift in Sources */,
 				927DADE22A50615A00A469A3 /* CharacterTableViewCell.swift in Sources */,
+				874AA8482A6A77A4003A7EA1 /* Model.xcdatamodeld in Sources */,
 				874AA83D2A6991E4003A7EA1 /* APITarget.swift in Sources */,
 				874AA8422A69950F003A7EA1 /* CharactersResponseModel.swift in Sources */,
 			);
@@ -474,6 +490,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		874AA8462A6A77A4003A7EA1 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				874AA8472A6A77A4003A7EA1 /* Model.xcdatamodel */,
+			);
+			currentVersion = 874AA8472A6A77A4003A7EA1 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 927DADB82A4F446200A469A3 /* Project object */;
 }

@@ -13,7 +13,7 @@ protocol ModalViewControllerDelegate: AnyObject {
 
 final class ModalViewController: UIViewController {
     
-    var data: CharacterResponseModel? {
+    var data: Character? {
         didSet {
             guard let data else {return}
             setUpData(data)
@@ -37,14 +37,16 @@ final class ModalViewController: UIViewController {
     @IBOutlet weak var locationLabel: UILabel!
     
     
-    private func setUpData(_ data: CharacterResponseModel) {
+    private func setUpData(_ data: Character) {
         nameLabel.text = data.name
-        statusLabel.text = data.status.rawValue
-        speciesLabel.text = data.species.rawValue
-        genderLabel.text = data.gender.rawValue
-        locationLabel.text = data.location.name
+        statusLabel.text = data.status
+        speciesLabel.text = data.species
+        genderLabel.text = data.gender
+        locationLabel.text = data.location
         
-        imageViewNew.download(from: data.image)
+        guard let image = data.image
+        else {return}
+        imageViewNew.download(from: image)
     }
     
     @IBAction func nameEditButtonDidTap() {
@@ -53,7 +55,6 @@ final class ModalViewController: UIViewController {
             alertController.addTextField { (textField) in
                 textField.placeholder = "Имя"
             }
-            var tempText: String = ""
             let cancelAction = UIAlertAction(title: "Отмена", style: .cancel, handler: nil)
             let changeAction = UIAlertAction(title: "Сохранить", style: .default) { [weak self] (_) in
                 guard let self = self,
@@ -62,7 +63,7 @@ final class ModalViewController: UIViewController {
                             else { return }
                 
                 self.nameLabel.text = newText
-                self.delegate?.updateData(with: data.id, newName: newText, idEdit: idEdit)
+                self.delegate?.updateData(with: Int(data.id), newName: newText, idEdit: idEdit)
             }
             alertController.addAction(cancelAction)
             alertController.addAction(changeAction)
@@ -88,7 +89,7 @@ final class ModalViewController: UIViewController {
                 
                 self.locationLabel.text = newText
         
-                self.delegate?.updateData(with: data.id, newName: newText, idEdit: idEdit)
+                self.delegate?.updateData(with: Int(data.id), newName: newText, idEdit: idEdit)
             }
         
             alertController.addAction(cancelAction)

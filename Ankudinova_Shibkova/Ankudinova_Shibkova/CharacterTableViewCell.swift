@@ -48,9 +48,11 @@ class CharacterTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    func setUpData(_ data: CharacterResponseModel) {
+    func setUpData(_ data: Character) {
         nameCharacterLabel.text = data.name
-        characterImageView.download(from: data.image)
+        guard let image = data.image
+        else {return}
+        characterImageView.download(from: image)
     }
     
     override func prepareForReuse() {
