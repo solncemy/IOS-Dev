@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_Lab4VersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_Lab4VersionString[];
+FOUNDATION_EXPORT double Pods_Ankudinova_ShibkovaVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_Ankudinova_ShibkovaVersionString[];
 

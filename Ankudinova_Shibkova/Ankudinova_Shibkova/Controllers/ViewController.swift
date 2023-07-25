@@ -171,4 +171,19 @@ extension ViewController: ModalViewControllerDelegate {
         }
     }
     
+    func deleteCharacterData(with id: Int32) {
+        do {
+            let request = Character.fetchRequest()
+            let current = try PersistentContainer.shared.viewContext.fetch(request)
+            
+            if let el = current.first(where: {$0.id == id}) {
+                PersistentContainer.shared.viewContext.delete(el)
+            }
+            PersistentContainer.shared.saveContext()
+            dismiss(animated: true)
+        } catch {
+            print(error)
+        }
+        
+    }
 }

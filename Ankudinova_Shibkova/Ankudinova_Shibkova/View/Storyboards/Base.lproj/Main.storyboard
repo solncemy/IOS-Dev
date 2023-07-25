@@ -27,7 +27,7 @@
         <!--Main-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Main" id="BYZ-38-t0r" customClass="ViewController" customModule="Lab4" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Main" id="BYZ-38-t0r" customClass="ViewController" customModule="Ankudinova_Shibkova" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,7 +36,7 @@
                                 <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CharacterTableViewCell" rowHeight="212" id="8R7-fn-zcH" customClass="CharacterTableViewCell" customModule="Lab4" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CharacterTableViewCell" rowHeight="212" id="8R7-fn-zcH" customClass="CharacterTableViewCell" customModule="Ankudinova_Shibkova" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="212"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8R7-fn-zcH" id="seo-Qy-da4">
@@ -95,8 +95,7 @@
         <!--Modal View Controller-->
         <scene sceneID="l3I-kY-efL">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dVq-Zw-lQ1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController storyboardIdentifier="ModalViewController" id="wvQ-6a-GhY" customClass="ModalViewController" customModule="Lab4" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ModalViewController" id="wvQ-6a-GhY" customClass="ModalViewController" customModule="Ankudinova_Shibkova" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0EI-GQ-yr0">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -190,6 +189,14 @@
                                     <action selector="nameEditButtonDidTap" destination="wvQ-6a-GhY" eventType="touchUpInside" id="2ao-v6-vAF"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxI-2A-ewZ">
+                                <rect key="frame" x="152" y="714" width="89" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Удалить"/>
+                                <connections>
+                                    <action selector="deleteBottonDipTap:" destination="wvQ-6a-GhY" eventType="touchUpInside" id="kkv-9P-9dM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LpA-Og-rA7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -213,7 +220,9 @@
                             <constraint firstItem="cxm-WH-XnI" firstAttribute="leading" secondItem="UgK-Tk-Wdd" secondAttribute="trailing" constant="20" id="hEN-bZ-PCu"/>
                             <constraint firstItem="GE6-MX-xUg" firstAttribute="leading" secondItem="774-2c-v9K" secondAttribute="trailing" constant="20" id="hwK-p3-ol9"/>
                             <constraint firstItem="Sjn-Nz-sG2" firstAttribute="top" secondItem="LpA-Og-rA7" secondAttribute="top" constant="60" id="jgn-cr-jHm"/>
+                            <constraint firstItem="xxI-2A-ewZ" firstAttribute="top" secondItem="cxm-WH-XnI" secondAttribute="bottom" constant="30" id="lcQ-E1-9oY"/>
                             <constraint firstItem="cxm-WH-XnI" firstAttribute="top" secondItem="GE6-MX-xUg" secondAttribute="bottom" constant="50" id="ovA-m3-B7r"/>
+                            <constraint firstItem="xxI-2A-ewZ" firstAttribute="centerX" secondItem="0EI-GQ-yr0" secondAttribute="centerX" id="pLV-cc-LN0"/>
                             <constraint firstItem="zPw-wr-kXJ" firstAttribute="top" secondItem="PHp-5V-UT6" secondAttribute="bottom" constant="249" id="pQV-6L-PVZ"/>
                             <constraint firstItem="UgK-Tk-Wdd" firstAttribute="top" secondItem="774-2c-v9K" secondAttribute="bottom" constant="50" id="psv-6v-QHW"/>
                             <constraint firstItem="PHp-5V-UT6" firstAttribute="top" secondItem="Sjn-Nz-sG2" secondAttribute="bottom" constant="46" id="udv-Dy-ag3"/>
@@ -235,6 +244,7 @@
                         <outlet property="statusLabel" destination="P2G-R5-jvC" id="yjV-nO-9tX"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dVq-Zw-lQ1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1290.8396946564885" y="-2.1126760563380285"/>
         </scene>

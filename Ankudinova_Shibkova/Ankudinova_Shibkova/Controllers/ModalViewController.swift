@@ -9,6 +9,7 @@ import UIKit
 
 protocol ModalViewControllerDelegate: AnyObject {
     func updateData(with id: Int, newName: String, idEdit: Int)
+    func deleteCharacterData(with id: Int32)
 }
 
 final class ModalViewController: UIViewController {
@@ -47,6 +48,12 @@ final class ModalViewController: UIViewController {
         guard let image = data.image
         else {return}
         imageViewNew.download(from: image)
+    }
+    
+    @IBAction func deleteBottonDipTap(_ sender: Any) {
+    
+        guard let data else {return}
+        delegate?.deleteCharacterData(with: data.id)
     }
     
     @IBAction func nameEditButtonDidTap() {

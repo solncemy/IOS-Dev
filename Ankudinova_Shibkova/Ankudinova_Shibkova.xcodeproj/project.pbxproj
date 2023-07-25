@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6ED8026765DE1925D26A75DC /* Pods_Ankudinova_Shibkova.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6432C9F5B995AD49B157BD3 /* Pods_Ankudinova_Shibkova.framework */; };
 		874AA83D2A6991E4003A7EA1 /* APITarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874AA83C2A6991E4003A7EA1 /* APITarget.swift */; };
 		874AA83F2A6993C1003A7EA1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874AA83E2A6993C1003A7EA1 /* NetworkManager.swift */; };
 		874AA8422A69950F003A7EA1 /* CharactersResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874AA8412A69950F003A7EA1 /* CharactersResponseModel.swift */; };
@@ -23,12 +24,12 @@
 		927DADD02A4F446400A469A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 927DADCE2A4F446400A469A3 /* LaunchScreen.storyboard */; };
 		927DADE22A50615A00A469A3 /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927DADE12A50615A00A469A3 /* CharacterTableViewCell.swift */; };
 		927DADE42A50893000A469A3 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927DADE32A50893000A469A3 /* ModalViewController.swift */; };
-		A5055BD90CDD640B003C553D /* Pods_Lab4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EFB10FBE0A23BD63A8D61A4 /* Pods_Lab4.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		02A6AFA0033CF4E20552AE2C /* Pods-Lab4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lab4.release.xcconfig"; path = "Target Support Files/Pods-Lab4/Pods-Lab4.release.xcconfig"; sourceTree = "<group>"; };
 		1BD425B1BFCF98B8B7F61EC5 /* Pods-Lab4.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lab4.debug.xcconfig"; path = "Target Support Files/Pods-Lab4/Pods-Lab4.debug.xcconfig"; sourceTree = "<group>"; };
+		7449817D149B3587E8DBF75A /* Pods-Ankudinova_Shibkova.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ankudinova_Shibkova.release.xcconfig"; path = "Target Support Files/Pods-Ankudinova_Shibkova/Pods-Ankudinova_Shibkova.release.xcconfig"; sourceTree = "<group>"; };
 		874AA83C2A6991E4003A7EA1 /* APITarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITarget.swift; sourceTree = "<group>"; };
 		874AA83E2A6993C1003A7EA1 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		874AA8412A69950F003A7EA1 /* CharactersResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersResponseModel.swift; sourceTree = "<group>"; };
@@ -47,7 +48,8 @@
 		927DADD12A4F446400A469A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		927DADE12A50615A00A469A3 /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
 		927DADE32A50893000A469A3 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
-		9EFB10FBE0A23BD63A8D61A4 /* Pods_Lab4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lab4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6432C9F5B995AD49B157BD3 /* Pods_Ankudinova_Shibkova.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ankudinova_Shibkova.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCDA8670859C25129E8B3AC8 /* Pods-Ankudinova_Shibkova.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ankudinova_Shibkova.debug.xcconfig"; path = "Target Support Files/Pods-Ankudinova_Shibkova/Pods-Ankudinova_Shibkova.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5055BD90CDD640B003C553D /* Pods_Lab4.framework in Frameworks */,
+				6ED8026765DE1925D26A75DC /* Pods_Ankudinova_Shibkova.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,7 +67,7 @@
 		59D78D009B9B6076455E95CD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9EFB10FBE0A23BD63A8D61A4 /* Pods_Lab4.framework */,
+				B6432C9F5B995AD49B157BD3 /* Pods_Ankudinova_Shibkova.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -75,6 +77,8 @@
 			children = (
 				1BD425B1BFCF98B8B7F61EC5 /* Pods-Lab4.debug.xcconfig */,
 				02A6AFA0033CF4E20552AE2C /* Pods-Lab4.release.xcconfig */,
+				FCDA8670859C25129E8B3AC8 /* Pods-Ankudinova_Shibkova.debug.xcconfig */,
+				7449817D149B3587E8DBF75A /* Pods-Ankudinova_Shibkova.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -236,15 +240,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Lab4/Pods-Lab4-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Ankudinova_Shibkova/Pods-Ankudinova_Shibkova-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Lab4/Pods-Lab4-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Ankudinova_Shibkova/Pods-Ankudinova_Shibkova-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Lab4/Pods-Lab4-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ankudinova_Shibkova/Pods-Ankudinova_Shibkova-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		89EAB36F15D32DE672353380 /* [CP] Check Pods Manifest.lock */ = {
@@ -262,7 +266,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Lab4-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Ankudinova_Shibkova-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -430,7 +434,7 @@
 		};
 		927DADD52A4F446400A469A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1BD425B1BFCF98B8B7F61EC5 /* Pods-Lab4.debug.xcconfig */;
+			baseConfigurationReference = FCDA8670859C25129E8B3AC8 /* Pods-Ankudinova_Shibkova.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -458,7 +462,7 @@
 		};
 		927DADD62A4F446400A469A3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 02A6AFA0033CF4E20552AE2C /* Pods-Lab4.release.xcconfig */;
+			baseConfigurationReference = 7449817D149B3587E8DBF75A /* Pods-Ankudinova_Shibkova.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
